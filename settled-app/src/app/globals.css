@@ -13,6 +13,10 @@
   --accent-hover: #34d399;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   min-height: 100%;

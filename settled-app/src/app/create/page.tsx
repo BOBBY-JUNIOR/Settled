@@ -175,7 +175,7 @@ export default function CreateBillPage() {
   const sharesOk = Math.abs(shareSum - 100) < 0.05;
 
   return (
-    <div className="page-grid items-start">
+    <div className="page-shell page-grid items-start py-8 pb-16 lg:py-12 lg:pb-24">
       <div className="space-y-6 lg:sticky lg:top-24">
         <MotionSection index={0}>
           <Link

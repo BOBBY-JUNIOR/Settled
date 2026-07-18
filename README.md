@@ -34,9 +34,9 @@
 | **Problem** | Splitting rent/utilities in crypto has no shared receipt — hashes get lost in chat and splits stay verbal |
 | **Solution** | Create a bill onchain, everyone confirms the split, settle in one tx, keep a permanent receipt on Monad |
 | **Category** | Monad Testnet |
-| **Project URL** | _[Add Vercel URL after deploy]_ |
-| **GitHub** | _[Add public repo URL]_ |
-| **Contract Address** | _[Add after deploy to Monad testnet]_ |
+| **Project URL** | https://settled-six.vercel.app |
+| **GitHub** | https://github.com/BOBBY-JUNIOR/Settled |
+| **Contract Address** | `0x7c6976D0aBbbddfe1D4b0b4F98cf333e2EB9DB09` |
 | **Demo Video** | _[Add public YouTube/Loom URL, max 3 min]_ |
 | **Post URL** | _[Add X/Twitter post URL — required for viral prize]_ |
 

@@ -36,10 +36,8 @@ export default function RootLayout({
         <Providers initialState={initialState}>
           <div className="flex min-h-screen flex-col">
             <Header />
-            <main className="page-shell flex-1 pb-16 pt-8 lg:pb-24 lg:pt-12">
-              {children}
-            </main>
-            <footer className="page-shell divider py-8">
+            <main className="flex-1 w-full">{children}</main>
+            <footer className="page-shell border-t border-white/10 py-8">
               <p className="font-mono text-xs text-subtle">
                 Settled · Spark · Monad Testnet
               </p>

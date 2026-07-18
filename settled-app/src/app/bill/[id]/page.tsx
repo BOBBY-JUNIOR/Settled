@@ -238,55 +238,63 @@ export default function BillDetailPage() {
 
   if (!rawId || billId === null) {
     return (
-      <MotionSection index={0} className="card max-w-lg space-y-3">
-        <h1 className="text-2xl font-semibold tracking-tight">Invalid bill</h1>
-        <p className="text-sm text-muted">Bill id must be a number.</p>
-        <Link href="/" className="btn-secondary inline-flex">
-          Home
-        </Link>
-      </MotionSection>
+      <div className="page-shell py-8 pb-16 lg:py-12 lg:pb-24">
+        <MotionSection index={0} className="card max-w-lg space-y-3">
+          <h1 className="text-2xl font-semibold tracking-tight">Invalid bill</h1>
+          <p className="text-sm text-muted">Bill id must be a number.</p>
+          <Link href="/" className="btn-secondary inline-flex">
+            Home
+          </Link>
+        </MotionSection>
+      </div>
     );
   }
 
   if (!configured) {
     return (
-      <MotionSection index={0} className="card max-w-lg space-y-3">
-        <h1 className="text-2xl font-semibold tracking-tight">
-          Contract not configured
-        </h1>
-        <p className="text-sm text-muted">
-          Set{" "}
-          <code className="font-mono text-xs text-foreground">
-            NEXT_PUBLIC_CONTRACT_ADDRESS
-          </code>{" "}
-          in{" "}
-          <code className="font-mono text-xs text-foreground">.env.local</code>.
-        </p>
-      </MotionSection>
+      <div className="page-shell py-8 pb-16 lg:py-12 lg:pb-24">
+        <MotionSection index={0} className="card max-w-lg space-y-3">
+          <h1 className="text-2xl font-semibold tracking-tight">
+            Contract not configured
+          </h1>
+          <p className="text-sm text-muted">
+            Set{" "}
+            <code className="font-mono text-xs text-foreground">
+              NEXT_PUBLIC_CONTRACT_ADDRESS
+            </code>{" "}
+            in{" "}
+            <code className="font-mono text-xs text-foreground">.env.local</code>.
+          </p>
+        </MotionSection>
+      </div>
     );
   }
 
   if (billQuery.isLoading) {
     return (
-      <MotionSection index={0} className="card max-w-lg">
-        <p className="font-mono text-sm text-muted">Loading bill from chain…</p>
-      </MotionSection>
+      <div className="page-shell py-8 pb-16 lg:py-12 lg:pb-24">
+        <MotionSection index={0} className="card max-w-lg">
+          <p className="font-mono text-sm text-muted">Loading bill from chain…</p>
+        </MotionSection>
+      </div>
     );
   }
 
   if (billQuery.isError || !bill) {
     return (
-      <MotionSection index={0} className="card max-w-lg space-y-3">
-        <h1 className="text-2xl font-semibold tracking-tight">Bill not found</h1>
-        <p className="text-sm text-muted">
-          No bill with id{" "}
-          <span className="font-mono text-foreground">{rawId}</span> on this
-          contract.
-        </p>
-        <Link href="/create" className="btn-primary inline-flex">
-          Create a bill
-        </Link>
-      </MotionSection>
+      <div className="page-shell py-8 pb-16 lg:py-12 lg:pb-24">
+        <MotionSection index={0} className="card max-w-lg space-y-3">
+          <h1 className="text-2xl font-semibold tracking-tight">Bill not found</h1>
+          <p className="text-sm text-muted">
+            No bill with id{" "}
+            <span className="font-mono text-foreground">{rawId}</span> on this
+            contract.
+          </p>
+          <Link href="/create" className="btn-primary inline-flex">
+            Create a bill
+          </Link>
+        </MotionSection>
+      </div>
     );
   }
 
@@ -305,7 +313,7 @@ export default function BillDetailPage() {
   }
 
   return (
-    <div className="page-grid items-start">
+    <div className="page-shell page-grid items-start py-8 pb-16 lg:py-12 lg:pb-24">
       {/* Summary column */}
       <div className="space-y-6 lg:sticky lg:top-24">
         <MotionSection index={0} className="space-y-4">
