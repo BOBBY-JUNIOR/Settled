@@ -330,9 +330,14 @@ export default function HomePage() {
           <p className="lede">
             One link. Everyone confirms. Settle once. Permanent proof.
           </p>
-          <Link href="/create" className="btn-primary">
-            Create a bill
-          </Link>
+          <div className="flex flex-wrap items-center justify-center gap-3">
+            <Link href="/create" className="btn-primary">
+              Create a bill
+            </Link>
+            <Link href="/receipts" className="btn-secondary">
+              View receipts
+            </Link>
+          </div>
           <p className="font-mono text-xs text-subtle">
             Monad Testnet · Spark hackathon
           </p>
