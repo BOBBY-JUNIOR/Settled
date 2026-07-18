@@ -5,7 +5,10 @@
 Create a bill, everyone confirms the split, settle in one transaction — permanent proof on [Monad Testnet](https://docs.monad.xyz).
 
 **Live app:** [https://settled-six.vercel.app](https://settled-six.vercel.app)  
-**Contract:** [`0x7c6976D0aBbbddfe1D4b0b4F98cf333e2EB9DB09`](https://testnet.monadvision.com/address/0x7c6976D0aBbbddfe1D4b0b4F98cf333e2EB9DB09)
+**Contract:** [`0x7c6976D0aBbbddfe1D4b0b4F98cf333e2EB9DB09`](https://testnet.monadvision.com/address/0x7c6976D0aBbbddfe1D4b0b4F98cf333e2EB9DB09)  
+**GitHub:** [github.com/BOBBY-JUNIOR/Settled](https://github.com/BOBBY-JUNIOR/Settled)  
+**Demo / X:** [x.com/i/status/2078502391947878636](https://x.com/i/status/2078502391947878636)  
+**Submission:** [buildanything.so/showcase/billsplitter-caa8](https://buildanything.so/showcase/billsplitter-caa8)
 
 ---
 
